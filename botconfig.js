@@ -1,10 +1,10 @@
 module.exports = {
   Admins: ["129342706693439488"], //Admins of the bot
-  ExpressServer: true, //If you wanted to make the website run or not
+  ExpressServer: false, //If you wanted to make the website run or not
   DefaultPrefix: ">", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/sbySMS7m3v", //Support Server Link
-  Token: "Njg3NzY5Njg3MTI3NDkwNTc3.GbHoVL.7bUmX8qR2tW6bGR7a7frnggkv2omNAQj6Z-N8Y", //Discord Bot Token
+  Token: process.env.token, //Discord Bot Token
   ClientID: "687769687127490577", //Discord Client ID
   ClientSecret: "7nT8xrwrpUBH299kQAYcgSwpVn0TXaAO", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
@@ -22,7 +22,7 @@ module.exports = {
   
   Presence: {
     status: "online", // You can show online, idle, and dnd
-    name: "Family Ties", // The message shown
+    name: "you", // The message shown
     type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
   },
 

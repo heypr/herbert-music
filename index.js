@@ -1,3 +1,4 @@
+
 const DiscordMusicBot = require("./structures/DiscordMusicBot");
 const { exec } = require("child_process");
 const client = new DiscordMusicBot();
